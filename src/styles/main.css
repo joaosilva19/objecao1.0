@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  overflow: hidden; /* Evita scroll do body */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app-header {
+  background-color: #1e2a38;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.app-header nav li {
+  margin-left: 20px;
+}
+
+.app-header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.objection-page {
+  display: flex;
+  padding: 20px;
+}
+
+.main-content {
+  flex: 3;
+  margin-right: 20px;
+}
+
+.stats-aside {
+  flex: 1;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.objection-card {
+  background: white;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.objection-header {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.responses {
+  margin-top: 10px;
+}
+
+.response-item {
+  margin-bottom: 10px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.feedback-buttons button {
+  margin-right: 5px;
+}
+
+.chart-container {
+  margin-bottom: 30px;
+}

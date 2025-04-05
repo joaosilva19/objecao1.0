@@ -1,0 +1,132 @@
+body {
+  background-color: #f1f5f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="search"],
+input {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 420px;
+  font-size: 15px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1d4ed8;
+}
+
+/* Botões */
+button {
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+  padding: 10px 18px;
+}
+
+button.primary {
+  background-color: #1d4ed8;
+  color: #fff;
+  border: none;
+}
+
+button.primary:hover {
+  background-color: #1e40af;
+}
+
+button.secondary {
+  background-color: transparent;
+  color: #1d4ed8;
+  border: 1px solid #1d4ed8;
+}
+
+button.secondary:hover {
+  background-color: #e0e7ff;
+}
+
+/* Cartões */
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  margin-bottom: 12px;
+  transition: background 0.2s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #f8fafc;
+}
+
+/* Caixa de feedback */
+.feedback-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.2s ease;
+}
+
+.feedback-box:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+.feedback-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.feedback-buttons button {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #1e293b;
+  transition: color 0.2s ease;
+}
+
+.feedback-buttons button:hover {
+  color: #0f172a;
+}
+
+/* Grid responsivo */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .feedback-box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .feedback-buttons {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

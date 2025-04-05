@@ -1,0 +1,27 @@
+.objection-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+  grid-gap: 10px;
+  height: 100%; /* ocupa todo o espaço disponível */
+}
+
+.objection-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.objection-card h3 {
+  margin: 0 0 10px 0;
+}
+
+.clicks {
+  font-size: 0.9rem;
+  color: #666;
+  align-self: flex-end;
+}
